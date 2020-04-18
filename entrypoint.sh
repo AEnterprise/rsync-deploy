@@ -2,7 +2,7 @@
 set -eu
 
 SSHPATH="$HOME/.ssh"
-mkdir "$SSHPATH"
+mkdir -p "$SSHPATH"
 echo "$DEPLOY_KEY" > "$SSHPATH/key"
 chmod 600 "$SSHPATH/key"
 SERVER_DEPLOY_STRING="$USERNAME@$SERVER_IP:$SERVER_DESTINATION"
