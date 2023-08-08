@@ -9,6 +9,7 @@ example usage to sync everything in the workspace folder:
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-e -c -r --delete"
+          SSH_ARGS: "-vvvv"
           SERVER_PORT: ${{ secrets.SERVER_PORT }}
           FOLDER: "./"
           SERVER_IP: ${{ secrets.SERVER_IP }}
